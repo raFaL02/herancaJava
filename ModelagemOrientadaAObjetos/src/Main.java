@@ -1,15 +1,19 @@
 import Animais.Cachorro;
+import Animais.Gato;
+import Animais.Passaro;
 
 public class Main {
     public static void main(String[] args) {
 
         Cachorro dog = new Cachorro("Pingo", "preto", 20,6.7, 6, "de boa");
 
-        System.out.println(dog.getNumerosDeCachorros());
+        Gato cat = new Gato("Morgana", "preto", 7, 5.5, "de boa");
 
-        Cachorro dog1 = new Cachorro("Pingo", "preto", 20,6.7, 6, "de boa");
+        Passaro birdy = new Passaro("Taca", "verde", 3, 1,"feliz");
 
-        System.out.println(dog1.getNumerosDeCachorros());
-        System.out.println(dog.getNumerosDeCachorros());
+        dog.soar();
+        cat.soar();
+        birdy.soar();
+
     }
 }

@@ -1,15 +1,11 @@
 package Animais;
 
-public class Passaro {
+public class Passaro extends Animal {
 
     static int numeroDePassaros;
-    private String name;
-    private String color;
-    private int height;
-    private double weight;
-    private String spiritState;
 
     public Passaro(String name, String color, int height, double weight, String spiritState) {
+        super(name, color, height, weight, spiritState);
         this.name = name;
         this.color = color;
         this.height = height;
@@ -19,12 +15,15 @@ public class Passaro {
         numeroDePassaros ++;
     }
 
-    void comer() {}
-
-    void dormir() {}
-
-    void soar() {
-        System.out.println("PIU PIU");
+    @Override
+    public String toString() {
+        return "Passaro{" +
+                "name='" + name + '\'' +
+                '}';
     }
 
+    @Override
+    public void soar() {
+        System.out.println("PIU PIU MALUCÃO");
+    }
 }
