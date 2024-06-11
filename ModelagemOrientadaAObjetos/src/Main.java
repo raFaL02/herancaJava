@@ -9,11 +9,11 @@ public class Main {
 
         Gato cat = new Gato("Morgana", "preto", 7, 5.5, "de boa");
 
-        Passaro birdy = new Passaro("Taca", "verde", 3, 1,"feliz");
+        Passaro bird = new Passaro("Taca", "verde", 3, 1,"feliz");
 
         dog.soar();
         cat.soar();
-        birdy.soar();
+        bird.soar();
 
     }
 }
