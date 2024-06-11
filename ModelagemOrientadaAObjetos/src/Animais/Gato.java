@@ -2,7 +2,7 @@ package Animais;
 
 public class Gato {
 
-    static String numeroDeGatos;
+    static int numeroDeGatos;
     private String name;
     private String color;
     private int height;
